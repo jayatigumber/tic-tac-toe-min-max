@@ -19,11 +19,9 @@ Min-max is a decision-making algorithm which uses decision theory, game theory, 
 ## Flowchart
 
 ![Flowchart](/flowchart.png)
-Format: ![Flowchart]
 
 ## Working Snapshots
-![Working snapshots](/snapshot.png)
-Format: ![Working Snapshots]
+![Working snapshots](/snapshot.PNG)
 
 ## Installation
 
