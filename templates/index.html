@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+
+<body class="body">
+    <div class="container-fluid">
+        <header>
+            <h1>Tick Tac Toe</h1>
+        </header>
+
+        <p> Demonstrating the Use and implementation of standard of Min-Max algorithm with recursive implementation <br>
+            The goal of providing this is to get the understanding of slower reaction time for Min-Max Algorithm due to its <br>
+            recursive implementation, for a 3X3 Tic Tac Toe<br>
+            <strong>Note: The agent takes most amount of time for first move. The time keeps reducing as we move towards the end of the game(as search space keeps reducing)</strong><br>
+            By - Jayati Gumber, Roll no. 101803546
+            </p>
+        
+        <div class="game">
+            <div class="canvas">
+                <div class="canvas-container">
+                    <canvas id="myCanvas" width="300" height="300">
+                        Canvas is not supported by your browser
+                    </canvas>
+                </div>
+            </div>
+            <div class="options">
+                <button type="button" class="btn btn-success myOptions" id="ai_btn">Agent Plays First</button></br>
+                <button type="button" class="btn btn-primary myOptions" id="human_btn">I'll Play First</button>
+                <div class="radio myOptions">
+                    <label><input type="radio" name="art" value="O" checked="checked" > O</label>
+                    <label><input type="radio" name="art" value="X"/> X</label>
+                </div>
+            </div>
+        </div>
+         <div class="status-pl">
+            <h2 id="status"></h2>
+            <h3 id = "time_agent"></h3>
+            <h3 id = "time_human"></h3>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{url_for('static',filename='js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static',filename='js/main.js')}}"></script>
+</body>
+
+</html>
